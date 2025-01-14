@@ -8,7 +8,8 @@ app.use(cors());
 const companies = require("../data.json");
 
 app.get("/api/companies", (req, res) => {
-  res.json(companies);
+  console.log("Request received at /api/companies");
+  res.json(companies.items);
 });
 
 app.listen(PORT, () => {
