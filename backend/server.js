@@ -8,8 +8,11 @@ app.use(cors());
 const companies = require("../data.json");
 
 app.get("/api/companies", (req, res) => {
-  console.log("Request received at /api/companies");
-  res.json(companies.items);
+  const uniqueCompanies = companies.items.filter(
+    (company, index, self) =>
+      index === self.findIndex((c) => c.uuid === company.uuid)
+  );
+  res.json(uniqueCompanies);
 });
 
 app.listen(PORT, () => {
