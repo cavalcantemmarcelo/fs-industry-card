@@ -9,7 +9,9 @@ const App = () => {
   useEffect(() => {
     const loadCompanies = async () => {
       try {
-        const response = await fetch("http://localhost:3000/api/companies");
+        const response = await fetch(
+          "https://fs-industry-card.onrender.com/api/companies"
+        );
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
