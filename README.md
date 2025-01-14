@@ -23,4 +23,4 @@ This technical test comprises two sections: a basic [Node.js](https://nodejs.org
 
 ---
 
-Good luck with your assignment! Have fun!
+Frontend URL: https://fs-industry-card-ibcludixh-cavalcantemmarcelos-projects.vercel.app/
