@@ -1,4 +1,6 @@
 export const fetchCompanies = async () => {
-  const response = await fetch("http://localhost:3000/api/companies");
+  const response = await fetch(
+    "https://fs-industry-card.onrender.com/api/companies"
+  );
   return response.json();
 };
